@@ -50,7 +50,7 @@
 		92E5307A294B49F600083879 /* KaroooooCodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaroooooCodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E5307E294B49F600083879 /* KaroooooCodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaroooooCodeChallengeUITests.swift; sourceTree = "<group>"; };
 		92E53080294B49F600083879 /* KaroooooCodeChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaroooooCodeChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		92E53092294B4AB200083879 /* Karoo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Karoo.json; sourceTree = "<group>"; };
+		92E53092294B4AB200083879 /* karoo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = karoo.json; sourceTree = "<group>"; };
 		92E53094294B4B2B00083879 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		92E53096294B682500083879 /* Usermodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usermodel.swift; sourceTree = "<group>"; };
 		92E53098294B689400083879 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
@@ -110,7 +110,6 @@
 				92E5308D294B4A5100083879 /* Utils */,
 				92E5305D294B49F300083879 /* AppDelegate.swift */,
 				92E53061294B49F300083879 /* ViewController.swift */,
-				92E53063294B49F300083879 /* Main.storyboard */,
 				92E53066294B49F600083879 /* Assets.xcassets */,
 				92E53068294B49F600083879 /* LaunchScreen.storyboard */,
 				92E5306B294B49F600083879 /* Info.plist */,
@@ -138,6 +137,7 @@
 		92E5308D294B4A5100083879 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				92E53092294B4AB200083879 /* karoo.json */,
 				92E53093294B4B1F00083879 /* Validation */,
 				92E53091294B4A7A00083879 /* Resource */,
 			);
@@ -155,6 +155,7 @@
 		92E5308F294B4A6000083879 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				92E53063294B49F300083879 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,7 +171,6 @@
 		92E53091294B4A7A00083879 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				92E53092294B4AB200083879 /* Karoo.json */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
