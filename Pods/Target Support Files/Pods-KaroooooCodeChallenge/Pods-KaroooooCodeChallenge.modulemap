@@ -1,0 +1,6 @@
+framework module Pods_KaroooooCodeChallenge {
+  umbrella header "Pods-KaroooooCodeChallenge-umbrella.h"
+
+  export *
+  module * { export * }
+}

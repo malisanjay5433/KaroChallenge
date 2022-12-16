@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08C172419793ED6F06F8190A /* Pods_KaroooooCodeChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25F8100C09A3B11CC5D0A86 /* Pods_KaroooooCodeChallengeTests.framework */; };
+		8BD747A3FBD8E64B8F8A56B6 /* Pods_KaroooooCodeChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A14C80AB77A7C83574E5FC /* Pods_KaroooooCodeChallenge.framework */; };
 		92E5305E294B49F300083879 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E5305D294B49F300083879 /* AppDelegate.swift */; };
 		92E53062294B49F300083879 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E53061294B49F300083879 /* ViewController.swift */; };
 		92E53065294B49F300083879 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E53063294B49F300083879 /* Main.storyboard */; };
@@ -18,6 +20,7 @@
 		92E53095294B4B2B00083879 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E53094294B4B2B00083879 /* Validation.swift */; };
 		92E53097294B682500083879 /* Usermodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E53096294B682500083879 /* Usermodel.swift */; };
 		92E53099294B689400083879 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E53098294B689400083879 /* UserViewModel.swift */; };
+		9A5E2F819AD3015F368D9474 /* Pods_KaroooooCodeChallenge_KaroooooCodeChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5568138D3A17F251376EEC7 /* Pods_KaroooooCodeChallenge_KaroooooCodeChallengeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E9658B3D26DC1222787B7BC /* Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests/Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		14A14C80AB77A7C83574E5FC /* Pods_KaroooooCodeChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaroooooCodeChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14AF62A7D0AC5AEB75FA5E72 /* Pods-KaroooooCodeChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaroooooCodeChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-KaroooooCodeChallengeTests/Pods-KaroooooCodeChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		35AA7FE6134C7CF214B3B8F1 /* Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests/Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		92E5305A294B49F300083879 /* KaroooooCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaroooooCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E5305D294B49F300083879 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92E53061294B49F300083879 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +61,11 @@
 		92E53094294B4B2B00083879 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		92E53096294B682500083879 /* Usermodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usermodel.swift; sourceTree = "<group>"; };
 		92E53098294B689400083879 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		9810EE7171257A7F23F867FB /* Pods-KaroooooCodeChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaroooooCodeChallenge.debug.xcconfig"; path = "Target Support Files/Pods-KaroooooCodeChallenge/Pods-KaroooooCodeChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		AEAE6415288FCA31F45780B5 /* Pods-KaroooooCodeChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaroooooCodeChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-KaroooooCodeChallengeTests/Pods-KaroooooCodeChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		B25F8100C09A3B11CC5D0A86 /* Pods_KaroooooCodeChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaroooooCodeChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8FE72797BEF10B86CC9D1CE /* Pods-KaroooooCodeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaroooooCodeChallenge.release.xcconfig"; path = "Target Support Files/Pods-KaroooooCodeChallenge/Pods-KaroooooCodeChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		F5568138D3A17F251376EEC7 /* Pods_KaroooooCodeChallenge_KaroooooCodeChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaroooooCodeChallenge_KaroooooCodeChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BD747A3FBD8E64B8F8A56B6 /* Pods_KaroooooCodeChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08C172419793ED6F06F8190A /* Pods_KaroooooCodeChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +89,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A5E2F819AD3015F368D9474 /* Pods_KaroooooCodeChallenge_KaroooooCodeChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D7FF5DED78896CD946ACACD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14A14C80AB77A7C83574E5FC /* Pods_KaroooooCodeChallenge.framework */,
+				F5568138D3A17F251376EEC7 /* Pods_KaroooooCodeChallenge_KaroooooCodeChallengeUITests.framework */,
+				B25F8100C09A3B11CC5D0A86 /* Pods_KaroooooCodeChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		928C4CCA67F818FFD62A0D4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9810EE7171257A7F23F867FB /* Pods-KaroooooCodeChallenge.debug.xcconfig */,
+				C8FE72797BEF10B86CC9D1CE /* Pods-KaroooooCodeChallenge.release.xcconfig */,
+				35AA7FE6134C7CF214B3B8F1 /* Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests.debug.xcconfig */,
+				0E9658B3D26DC1222787B7BC /* Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests.release.xcconfig */,
+				14AF62A7D0AC5AEB75FA5E72 /* Pods-KaroooooCodeChallengeTests.debug.xcconfig */,
+				AEAE6415288FCA31F45780B5 /* Pods-KaroooooCodeChallengeTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		92E53051294B49F300083879 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +127,8 @@
 				92E53073294B49F600083879 /* KaroooooCodeChallengeTests */,
 				92E5307D294B49F600083879 /* KaroooooCodeChallengeUITests */,
 				92E5305B294B49F300083879 /* Products */,
+				928C4CCA67F818FFD62A0D4B /* Pods */,
+				7D7FF5DED78896CD946ACACD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92E53084294B49F600083879 /* Build configuration list for PBXNativeTarget "KaroooooCodeChallenge" */;
 			buildPhases = (
+				8B52BDD356A8E11C79566254 /* [CP] Check Pods Manifest.lock */,
 				92E53056294B49F300083879 /* Sources */,
 				92E53057294B49F300083879 /* Frameworks */,
 				92E53058294B49F300083879 /* Resources */,
+				EDA7C0DAD234AE85FA9E4AA0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,6 +250,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92E53087294B49F600083879 /* Build configuration list for PBXNativeTarget "KaroooooCodeChallengeTests" */;
 			buildPhases = (
+				50128AEC7FBE728AD2D5005F /* [CP] Check Pods Manifest.lock */,
 				92E5306C294B49F600083879 /* Sources */,
 				92E5306D294B49F600083879 /* Frameworks */,
 				92E5306E294B49F600083879 /* Resources */,
@@ -225,9 +269,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92E5308A294B49F600083879 /* Build configuration list for PBXNativeTarget "KaroooooCodeChallengeUITests" */;
 			buildPhases = (
+				3A8124091C6AE28367309DFE /* [CP] Check Pods Manifest.lock */,
 				92E53076294B49F600083879 /* Sources */,
 				92E53077294B49F600083879 /* Frameworks */,
 				92E53078294B49F600083879 /* Resources */,
+				18FB3ED6BB16C8DCACCF0A1E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -308,6 +354,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18FB3ED6BB16C8DCACCF0A1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests/Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests/Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests/Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A8124091C6AE28367309DFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50128AEC7FBE728AD2D5005F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KaroooooCodeChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B52BDD356A8E11C79566254 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KaroooooCodeChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDA7C0DAD234AE85FA9E4AA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KaroooooCodeChallenge/Pods-KaroooooCodeChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KaroooooCodeChallenge/Pods-KaroooooCodeChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KaroooooCodeChallenge/Pods-KaroooooCodeChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92E53056294B49F300083879 /* Sources */ = {
@@ -490,6 +639,7 @@
 		};
 		92E53085294B49F600083879 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9810EE7171257A7F23F867FB /* Pods-KaroooooCodeChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -518,6 +668,7 @@
 		};
 		92E53086294B49F600083879 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8FE72797BEF10B86CC9D1CE /* Pods-KaroooooCodeChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -546,6 +697,7 @@
 		};
 		92E53088294B49F600083879 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14AF62A7D0AC5AEB75FA5E72 /* Pods-KaroooooCodeChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -565,6 +717,7 @@
 		};
 		92E53089294B49F600083879 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEAE6415288FCA31F45780B5 /* Pods-KaroooooCodeChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -584,6 +737,7 @@
 		};
 		92E5308B294B49F600083879 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35AA7FE6134C7CF214B3B8F1 /* Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -601,6 +755,7 @@
 		};
 		92E5308C294B49F600083879 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E9658B3D26DC1222787B7BC /* Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
