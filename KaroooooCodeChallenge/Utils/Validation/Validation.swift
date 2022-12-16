@@ -7,10 +7,10 @@
 
 import Foundation
 class Validation{
-    public func isValidUsername(Username:String) -> Bool {
+    public func isValidUsername(username:String) -> Bool {
         let RegEx = "\\A\\w{4,12}\\z"
         let Test = NSPredicate(format:"SELF MATCHES %@", RegEx)
-        return Test.evaluate(with: Username)
+        return Test.evaluate(with: username)
     }
     public func isValidatePassword(password: String) -> Bool {
         //Minimum 8 characters at least 1 Alphabet and 1 Number:
