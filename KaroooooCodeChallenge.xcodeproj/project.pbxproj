@@ -10,8 +10,10 @@
 		08C172419793ED6F06F8190A /* Pods_KaroooooCodeChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25F8100C09A3B11CC5D0A86 /* Pods_KaroooooCodeChallengeTests.framework */; };
 		8BD747A3FBD8E64B8F8A56B6 /* Pods_KaroooooCodeChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A14C80AB77A7C83574E5FC /* Pods_KaroooooCodeChallenge.framework */; };
 		92A04694294CEB6B00340496 /* TextFieldWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A04693294CEB6B00340496 /* TextFieldWithPadding.swift */; };
+		92A04697294D714800340496 /* login.json in Resources */ = {isa = PBXBuildFile; fileRef = 92A04696294D714800340496 /* login.json */; };
+		92A04699294D7A5400340496 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A04698294D7A5400340496 /* UserDetailViewController.swift */; };
 		92E5305E294B49F300083879 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E5305D294B49F300083879 /* AppDelegate.swift */; };
-		92E53062294B49F300083879 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E53061294B49F300083879 /* ViewController.swift */; };
+		92E53062294B49F300083879 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E53061294B49F300083879 /* LoginViewController.swift */; };
 		92E53065294B49F300083879 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E53063294B49F300083879 /* Main.storyboard */; };
 		92E53067294B49F600083879 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92E53066294B49F600083879 /* Assets.xcassets */; };
 		92E5306A294B49F600083879 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E53068294B49F600083879 /* LaunchScreen.storyboard */; };
@@ -47,9 +49,11 @@
 		14AF62A7D0AC5AEB75FA5E72 /* Pods-KaroooooCodeChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaroooooCodeChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-KaroooooCodeChallengeTests/Pods-KaroooooCodeChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		35AA7FE6134C7CF214B3B8F1 /* Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests/Pods-KaroooooCodeChallenge-KaroooooCodeChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		92A04693294CEB6B00340496 /* TextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithPadding.swift; sourceTree = "<group>"; };
+		92A04696294D714800340496 /* login.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = login.json; sourceTree = "<group>"; };
+		92A04698294D7A5400340496 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		92E5305A294B49F300083879 /* KaroooooCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaroooooCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92E5305D294B49F300083879 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92E53061294B49F300083879 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		92E53061294B49F300083879 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		92E53064294B49F300083879 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92E53066294B49F600083879 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92E53069294B49F600083879 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -136,6 +140,14 @@
 			path = Textfield;
 			sourceTree = "<group>";
 		};
+		92A04695294D712C00340496 /* lottie */ = {
+			isa = PBXGroup;
+			children = (
+				92A04696294D714800340496 /* login.json */,
+			);
+			path = lottie;
+			sourceTree = "<group>";
+		};
 		92E53051294B49F300083879 = {
 			isa = PBXGroup;
 			children = (
@@ -166,7 +178,8 @@
 				92E5308E294B4A5800083879 /* Model */,
 				92E5308D294B4A5100083879 /* Utils */,
 				92E5305D294B49F300083879 /* AppDelegate.swift */,
-				92E53061294B49F300083879 /* ViewController.swift */,
+				92E53061294B49F300083879 /* LoginViewController.swift */,
+				92A04698294D7A5400340496 /* UserDetailViewController.swift */,
 				92E53066294B49F600083879 /* Assets.xcassets */,
 				92E53068294B49F600083879 /* LaunchScreen.storyboard */,
 				92E5306B294B49F600083879 /* Info.plist */,
@@ -194,6 +207,7 @@
 		92E5308D294B4A5100083879 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				92A04695294D712C00340496 /* lottie */,
 				92A04692294CEB1300340496 /* Textfield */,
 				92A04691294CEB0A00340496 /* Button */,
 				92E53092294B4AB200083879 /* karoo.json */,
@@ -354,6 +368,7 @@
 				92E5306A294B49F600083879 /* LaunchScreen.storyboard in Resources */,
 				92E53067294B49F600083879 /* Assets.xcassets in Resources */,
 				92E53065294B49F300083879 /* Main.storyboard in Resources */,
+				92A04697294D714800340496 /* login.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,10 +496,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92A04699294D7A5400340496 /* UserDetailViewController.swift in Sources */,
 				92E53097294B682500083879 /* Usermodel.swift in Sources */,
 				92A04694294CEB6B00340496 /* TextFieldWithPadding.swift in Sources */,
 				92E53099294B689400083879 /* UserViewModel.swift in Sources */,
-				92E53062294B49F300083879 /* ViewController.swift in Sources */,
+				92E53062294B49F300083879 /* LoginViewController.swift in Sources */,
 				92E53095294B4B2B00083879 /* Validation.swift in Sources */,
 				92E5305E294B49F300083879 /* AppDelegate.swift in Sources */,
 			);

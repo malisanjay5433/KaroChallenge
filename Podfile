@@ -5,7 +5,8 @@ target 'KaroooooCodeChallenge' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 pod 'IQKeyboardManagerSwift'
-
+pod 'TweeTextField'
+pod 'lottie-ios'
   # Pods for KaroooooCodeChallenge
 
   target 'KaroooooCodeChallengeTests' do

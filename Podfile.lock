@@ -1,16 +1,24 @@
 PODS:
   - IQKeyboardManagerSwift (6.5.10)
+  - lottie-ios (3.5.0)
+  - TweeTextField (1.6.4)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
+  - lottie-ios
+  - TweeTextField
 
 SPEC REPOS:
   trunk:
     - IQKeyboardManagerSwift
+    - lottie-ios
+    - TweeTextField
 
 SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  lottie-ios: c55158d67d0629a260625cc2ded2052b829e3c3e
+  TweeTextField: 726de695eead9784f7ed02e22f6944bfcfcca07a
 
-PODFILE CHECKSUM: 6d65b685409a58aedcb69fa43204c917981d20e7
+PODFILE CHECKSUM: f8da731e1f95449460a22cdfb493a09da41c6423
 
 COCOAPODS: 1.11.3
