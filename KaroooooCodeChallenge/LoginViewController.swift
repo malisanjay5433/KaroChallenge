@@ -14,6 +14,8 @@ class LoginViewController: UIViewController,UITextFieldDelegate{
     @IBOutlet weak var cityTextField:TweeAttributedTextField!
     @IBOutlet weak var lottieAnimation:LottieAnimationView!
     @IBOutlet weak var loginBtn:UIButton!
+    var selectedCountry: String?
+    var countryList = ["Algeria", "Andorra", "Angola", "India", "Thailand"]
     override func viewDidLoad() {
         super.viewDidLoad()
         loginBtn.layer.cornerRadius = 8
@@ -24,6 +26,24 @@ class LoginViewController: UIViewController,UITextFieldDelegate{
         usernameTextField.text = "sasssa"
         passwordTextField.text = "Shwetasas12"
         cityTextField.text = "mumbai"
+        cityTextField.text = countryList[0]
+        createPickerView()
+    }
+    func createPickerView() {
+        let pickerView = UIPickerView()
+        pickerView.delegate = self
+        cityTextField.inputView = pickerView
+    }
+    func dismissPickerView() {
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        let button = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(self.action))
+        toolBar.setItems([button], animated: true)
+        toolBar.isUserInteractionEnabled = true
+        cityTextField.inputAccessoryView = toolBar
+    }
+    @objc func action() {
+        view.endEditing(true)
     }
     @IBAction func submitLoginCredentails(_ sender: Any) {
         let validation = Validation()
@@ -37,7 +57,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate{
             self.usernameTextField.infoLabel.text = ""
             self.passwordTextField.infoLabel.text = "Password should be minimum 6 char"
             self.passwordTextField.infoLabel.font = UIFont.systemFont(ofSize:10, weight:.regular)
-
+            
             self.passwordTextField.infoLabel.textColor = .red
             return
         }else if(cityTextField.text?.isEmpty == true){
@@ -88,5 +108,20 @@ extension LoginViewController{
         lottieAnimation.animationSpeed = 0.7
         // 4. Play animation
         lottieAnimation.play()
+    }
+}
+extension LoginViewController : UIPickerViewDelegate{
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1 // number of session
+    }
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return countryList.count // number of dropdown items
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return countryList[row] // dropdown item
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedCountry = countryList[row] // selected item
+        cityTextField.text = selectedCountry
     }
 }
