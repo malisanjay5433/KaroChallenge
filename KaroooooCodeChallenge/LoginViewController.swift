@@ -24,7 +24,6 @@ class LoginViewController: UIViewController,UITextFieldDelegate{
         usernameTextField.text = "sasssa"
         passwordTextField.text = "Shwetasas12"
         cityTextField.text = "mumbai"
-
     }
     @IBAction func submitLoginCredentails(_ sender: Any) {
         let validation = Validation()
@@ -43,16 +42,16 @@ class LoginViewController: UIViewController,UITextFieldDelegate{
             return
         }else if(cityTextField.text?.isEmpty == true){
             self.passwordTextField.infoLabel.text = ""
-            
             self.cityTextField.infoLabel.text = "Please select city name"
             self.cityTextField.infoLabel.font = UIFont.systemFont(ofSize:10, weight:.regular)
             self.cityTextField.infoLabel.textColor = .red
             return
+        }else{
+            self.usernameTextField.infoLabel.text = ""
+            self.passwordTextField.infoLabel.text = ""
+            self.cityTextField.infoLabel.text = ""
+            performSegue(withIdentifier: "UserDetailViewController", sender: nil)
         }
-        self.usernameTextField.infoLabel.text = ""
-        self.passwordTextField.infoLabel.text = ""
-        self.cityTextField.infoLabel.text = ""
-        performSegue(withIdentifier: "UserDetailViewController", sender: nil)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "UserDetailViewController"{
@@ -70,11 +69,9 @@ extension LoginViewController{
         usernameTextField.layer.borderWidth = 1.0
         passwordTextField.layer.borderWidth = 1.0
         cityTextField.layer.borderWidth = 1.0
-
         usernameTextField.layer.borderColor = UIColor.white.cgColor
         passwordTextField.layer.borderColor = UIColor.white.cgColor
         cityTextField.layer.borderColor = UIColor.white.cgColor
-        
         self.usernameTextField.delegate = self
         self.passwordTextField.delegate = self
         self.cityTextField.delegate = self

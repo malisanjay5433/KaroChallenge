@@ -34,4 +34,20 @@ class UserViewModel{
         }
         return nil
     }
+    
+    func readUser() ->[Usermodel]?{
+        do {
+            if let file = Bundle.main.url(forResource: "karoo", withExtension: "json") {
+                let data = try Data(contentsOf: file)
+                let json = try JSONSerialization.jsonObject(with: data, options: [.mutableContainers])
+                if let object = json as? [Usermodel] {
+                    return object
+                }
+                return nil
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
+        return nil
+    }
 }
