@@ -25,9 +25,8 @@ class LoginViewController: UIViewController,UITextFieldDelegate{
         configurelottieAnimation()
         usernameTextField.text = "sasssa"
         passwordTextField.text = "Shwetasas12"
-        cityTextField.text = "mumbai"
         cityTextField.text = countryList[0]
-        createPickerView()
+//        createPickerView()
     }
     func createPickerView() {
         let pickerView = UIPickerView()
@@ -66,12 +65,11 @@ class LoginViewController: UIViewController,UITextFieldDelegate{
             self.cityTextField.infoLabel.font = UIFont.systemFont(ofSize:10, weight:.regular)
             self.cityTextField.infoLabel.textColor = .red
             return
-        }else{
+        }
             self.usernameTextField.infoLabel.text = ""
             self.passwordTextField.infoLabel.text = ""
             self.cityTextField.infoLabel.text = ""
             performSegue(withIdentifier: "UserDetailViewController", sender: nil)
-        }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "UserDetailViewController"{
