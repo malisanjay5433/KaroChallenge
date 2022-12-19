@@ -18,6 +18,10 @@ class MasterViewController: UIViewController {
         let karoJSON = UserViewModel().readJSONFromFile(fileName:"local", type:[Usermodel].self) ?? []
         self.users = karoJSON
     }
+    
+    @IBAction func userlogut(_ sender: Any) {
+        performSegue(withIdentifier: "Login", sender: nil)
+    }
 }
 extension MasterViewController:UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -38,7 +42,7 @@ extension MasterViewController:UITableViewDelegate, UITableViewDataSource{
         performSegue(withIdentifier: "DetailsViewController", sender:self.users[indexPath.row])
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == ""{
+        if segue.identifier == "DetailsViewController"{
             let vc = segue.destination as! DetailsViewController
             vc.userDetails = sender as? Usermodel
         }

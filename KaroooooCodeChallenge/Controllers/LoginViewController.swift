@@ -15,24 +15,24 @@ class LoginViewController: UIViewController,UITextFieldDelegate{
     @IBOutlet weak var lottieAnimation:LottieAnimationView!
     @IBOutlet weak var loginBtn:UIButton!
     var selectedCountry: String?
-    var countryList = ["Algeria", "Andorra", "Angola", "India", "Thailand"]
+    var countryList = ["Algeria", "Australia","Brazil","Angola", "Canada", "Denmark","India", "Singapore","Russia"]
+    let pickerView = UIPickerView()
     override func viewDidLoad() {
         super.viewDidLoad()
         loginBtn.layer.cornerRadius = 8
-        loginBtn.layer.borderWidth = 1
-        loginBtn.layer.borderColor  = UIColor.white.cgColor
         configureControls()
         configurelottieAnimation()
         usernameTextField.text = "sasssa"
         passwordTextField.text = "Shwetasas12"
         cityTextField.text = countryList[0]
-//        createPickerView()
-    }
-    func createPickerView() {
-        let pickerView = UIPickerView()
+        usernameTextField.textColor = .black
+        passwordTextField.textColor = .black
+        cityTextField.textColor = .black
         pickerView.delegate = self
+        pickerView.dataSource = self
         cityTextField.inputView = pickerView
     }
+    
     func dismissPickerView() {
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
@@ -66,10 +66,10 @@ class LoginViewController: UIViewController,UITextFieldDelegate{
             self.cityTextField.infoLabel.textColor = .red
             return
         }
-            self.usernameTextField.infoLabel.text = ""
-            self.passwordTextField.infoLabel.text = ""
-            self.cityTextField.infoLabel.text = ""
-            performSegue(withIdentifier: "UserDetailViewController", sender: nil)
+        self.usernameTextField.infoLabel.text = ""
+        self.passwordTextField.infoLabel.text = ""
+        self.cityTextField.infoLabel.text = ""
+        performSegue(withIdentifier: "UserDetailViewController", sender: nil)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "UserDetailViewController"{
@@ -87,9 +87,11 @@ extension LoginViewController{
         usernameTextField.layer.borderWidth = 1.0
         passwordTextField.layer.borderWidth = 1.0
         cityTextField.layer.borderWidth = 1.0
-        usernameTextField.layer.borderColor = UIColor.white.cgColor
-        passwordTextField.layer.borderColor = UIColor.white.cgColor
-        cityTextField.layer.borderColor = UIColor.white.cgColor
+        
+        usernameTextField.layer.borderColor = UIColor.black.cgColor
+        passwordTextField.layer.borderColor = UIColor.black.cgColor
+        cityTextField.layer.borderColor = UIColor.black.cgColor
+        
         self.usernameTextField.delegate = self
         self.passwordTextField.delegate = self
         self.cityTextField.delegate = self
@@ -108,15 +110,31 @@ extension LoginViewController{
         lottieAnimation.play()
     }
 }
-extension LoginViewController : UIPickerViewDelegate{
+//extension LoginViewController : UIPickerViewDelegate{
+//    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+//        return 1 // number of session
+//    }
+//    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+//        return countryList.count // number of dropdown items
+//    }
+//    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+//        return countryList[row] // dropdown item
+//    }
+//    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+//        selectedCountry = countryList[row] // selected item
+//        cityTextField.text = selectedCountry
+//    }
+//
+//}
+extension LoginViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1 // number of session
+        return 1
     }
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return countryList.count // number of dropdown items
+        return countryList.count
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return countryList[row] // dropdown item
+        return countryList[row]
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedCountry = countryList[row] // selected item
