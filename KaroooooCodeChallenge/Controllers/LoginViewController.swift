@@ -22,9 +22,6 @@ class LoginViewController: UIViewController,UITextFieldDelegate{
         loginBtn.layer.cornerRadius = 8
         configureControls()
         configurelottieAnimation()
-        usernameTextField.text = "sasssa"
-        passwordTextField.text = "Shwetasas12"
-        cityTextField.text = countryList[0]
         usernameTextField.textColor = .black
         passwordTextField.textColor = .black
         cityTextField.textColor = .black
@@ -32,7 +29,6 @@ class LoginViewController: UIViewController,UITextFieldDelegate{
         pickerView.dataSource = self
         cityTextField.inputView = pickerView
     }
-    
     func dismissPickerView() {
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
@@ -45,36 +41,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate{
         view.endEditing(true)
     }
     @IBAction func submitLoginCredentails(_ sender: Any) {
-        let validation = Validation()
-        if (validation.isValidUsername(username: usernameTextField.text ?? "") == false){
-            self.usernameTextField.infoLabel.text = "Username should be minimum 4 char"
-            self.usernameTextField.infoLabel.font = UIFont.systemFont(ofSize:10, weight:.regular)
-            self.usernameTextField.infoLabel.textColor = .red
-            return
-        }
-        else if (validation.isValidatePassword(password:passwordTextField.text ?? "") == false){
-            self.usernameTextField.infoLabel.text = ""
-            self.passwordTextField.infoLabel.text = "Password should be minimum 6 char"
-            self.passwordTextField.infoLabel.font = UIFont.systemFont(ofSize:10, weight:.regular)
-            
-            self.passwordTextField.infoLabel.textColor = .red
-            return
-        }else if(cityTextField.text?.isEmpty == true){
-            self.passwordTextField.infoLabel.text = ""
-            self.cityTextField.infoLabel.text = "Please select city name"
-            self.cityTextField.infoLabel.font = UIFont.systemFont(ofSize:10, weight:.regular)
-            self.cityTextField.infoLabel.textColor = .red
-            return
-        }
-        self.usernameTextField.infoLabel.text = ""
-        self.passwordTextField.infoLabel.text = ""
-        self.cityTextField.infoLabel.text = ""
-        performSegue(withIdentifier: "UserDetailViewController", sender: nil)
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "UserDetailViewController"{
-            
-        }
+        loginUser()
     }
 }
 
@@ -110,22 +77,6 @@ extension LoginViewController{
         lottieAnimation.play()
     }
 }
-//extension LoginViewController : UIPickerViewDelegate{
-//    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-//        return 1 // number of session
-//    }
-//    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-//        return countryList.count // number of dropdown items
-//    }
-//    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-//        return countryList[row] // dropdown item
-//    }
-//    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-//        selectedCountry = countryList[row] // selected item
-//        cityTextField.text = selectedCountry
-//    }
-//
-//}
 extension LoginViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -139,5 +90,34 @@ extension LoginViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedCountry = countryList[row] // selected item
         cityTextField.text = selectedCountry
+        self.cityTextField.infoLabel.text = ""
+    }
+}
+extension LoginViewController{
+    private func loginUser(){
+        let validation = Validation()
+        if (validation.isValidUsername(username: usernameTextField.text?.trimmingCharacters(in: .whitespaces) ?? "") == false){
+            self.usernameTextField.infoLabel.text = "Username should be any 4 char"
+            self.usernameTextField.infoLabel.font = UIFont.systemFont(ofSize:10, weight:.regular)
+            self.usernameTextField.infoLabel.textColor = .red
+            return
+        }
+        else if (validation.isValidatePassword(password:passwordTextField.text?.trimmingCharacters(in: .whitespaces) ?? "") == false){
+            self.usernameTextField.infoLabel.text = ""
+            self.passwordTextField.infoLabel.text = "Passwod shoud be alphanumberic with 1 Uppercase"
+            self.passwordTextField.infoLabel.font = UIFont.systemFont(ofSize:10, weight:.regular)
+            self.passwordTextField.infoLabel.textColor = .red
+            return
+        }else if(cityTextField.text?.isEmpty == true){
+            self.passwordTextField.infoLabel.text = ""
+            self.cityTextField.infoLabel.text = "Please select city name"
+            self.cityTextField.infoLabel.font = UIFont.systemFont(ofSize:10, weight:.regular)
+            self.cityTextField.infoLabel.textColor = .red
+            return
+        }
+        self.usernameTextField.infoLabel.text = ""
+        self.passwordTextField.infoLabel.text = ""
+        self.cityTextField.infoLabel.text = ""
+        performSegue(withIdentifier: "MasterViewController", sender: nil)
     }
 }

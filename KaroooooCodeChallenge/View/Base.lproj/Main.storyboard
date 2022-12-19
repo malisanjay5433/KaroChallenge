@@ -129,7 +129,7 @@
                         <outlet property="lottieAnimation" destination="Iql-9i-WEg" id="uiQ-JE-i2p"/>
                         <outlet property="passwordTextField" destination="8jK-nA-Rjd" id="VAA-UI-eOk"/>
                         <outlet property="usernameTextField" destination="y7F-6k-hcx" id="WTB-UP-pCG"/>
-                        <segue destination="fBC-aY-Wcs" kind="presentation" identifier="UserDetailViewController" modalPresentationStyle="overFullScreen" modalTransitionStyle="flipHorizontal" id="3r2-Tg-zF8"/>
+                        <segue destination="fBC-aY-Wcs" kind="presentation" identifier="MasterViewController" modalPresentationStyle="overFullScreen" modalTransitionStyle="flipHorizontal" id="3r2-Tg-zF8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
