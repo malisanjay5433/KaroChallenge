@@ -1,6 +1,3 @@
-# KaroChallenge 
-
-
 <h1 align="center">Hi 👋, I'm Sanjay Mali</h1>
 <h3 align="center">A passionate Mobile Engineer from India</h3>
 <img align= "right" alt= "coding" width="400" src="https://user-images.githubusercontent.com/55389276/140866485-8fb1c876-9a8f-4d6a-98dc-08c4981eaf70.gif">
@@ -8,18 +5,36 @@
   .com/_connectsanjay" target="blank"><img src="https://img.shields.io/twitter/follow/_connectsanjay?logo=twitter&style=for-the-badge" alt="_connectsanjay" /></a> </p>
 
 
-<h2>KaroChallenge</h2>
+## KaroChallenge
 
-## You can login karo app using username and password.
+### You can login karo app using username and password.
 
-### Username : Username validation is at least 4 character
+#### Username : Username validation is at least 4 character
   ex: sanjay
-### Password : Password validation is at least 4 character with Alphanumberic with 1 uppercase Character  
+#### Password : Password validation is at least 4 character with Alphanumberic with 1 uppercase Character  
   ex: Sanjay9192
-### CityName : Select any city from pickerView
+#### CityName : Select any city from pickerView
 
+## Sample Testcases
 
-### Sample App screens: 
+Test Case '-[KaroooooCodeChallengeTests.KaroooooCodeChallengeTests testusername_with_EMPTY_INPUT]' started.
+testusername_with_EMPTY_INPUT
+
+Test Case '-[KaroooooCodeChallengeTests.KaroooooCodeChallengeTests testusername_with_EMPTY_INPUT]' passed (0.002 seconds).
+Test Case '-[KaroooooCodeChallengeTests.KaroooooCodeChallengeTests testusername_with_RANDOM_INPUT]' started.
+
+testusername_with_RANDOM_INPUT
+false
+Test Case '-[KaroooooCodeChallengeTests.KaroooooCodeChallengeTests testusername_with_RANDOM_INPUT]' passed (0.002 seconds).
+Test Case '-[KaroooooCodeChallengeTests.KaroooooCodeChallengeTests testusername_with_VALID_INPUT]' started.
+
+testusername_with_VALID_INPUT
+true
+Test Case '-[KaroooooCodeChallengeTests.KaroooooCodeChallengeTests testusername_with_VALID_INPUT]' passed (0.002 seconds).
+Test Suite 'KaroooooCodeChallengeTests' passed at 2022-12-20 09:21:35.365.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.631 (0.637) seconds
+
+## Sample App screens: 
 
 <img width="300" alt="iOS" src= "https://user-images.githubusercontent.com/8912602/208578790-940c6c6c-5292-4588-bbde-10f16a0ff5f5.png">
 <img width="300" alt="iOS" src= "https://user-images.githubusercontent.com/8912602/208578800-f8572e33-0ca2-481a-8442-ea12ea9f832c.png">
