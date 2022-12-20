@@ -19,6 +19,14 @@
 ### CityName : Select any city from pickerView
 
 
+### Sample App screens: 
+
+<img width="300" alt="iOS" src= "https://user-images.githubusercontent.com/8912602/208578790-940c6c6c-5292-4588-bbde-10f16a0ff5f5.png">
+<img width="300" alt="iOS" src= "https://user-images.githubusercontent.com/8912602/208578800-f8572e33-0ca2-481a-8442-ea12ea9f832c.png">
+<img width="300" alt="iOS" src= "https://user-images.githubusercontent.com/8912602/208578813-1e766ab4-1db1-49e0-8c34-6be6543800aa.png">
+<img width="300" alt="iOS" src= "https://user-images.githubusercontent.com/8912602/208578849-8ee7e35c-cd5f-4c29-8e11-e3a9b4fdb90d.png">
+<img width="300" alt="iOS" src= "https://user-images.githubusercontent.com/8912602/208578857-d18c763f-33db-47c5-98ae-4d272ad734de.png">
+
 
 - 🌱 I’m currently learning **Explore more about iOS | Flutter | Android | Ionic | Capacitor **
 
